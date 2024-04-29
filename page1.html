@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page 1 - First Quarter Files</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body style="background-color: black; color: white;">
+
+<header class="d-flex flex-column justify-content-center align-items-center bg-light text-dark">
+    <div class="logo">
+        <a href="main.html"><img src="logo.jpeg" class="img-fluid" style="max-width: 200px;" alt="Logo"></a>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="page1.html">First Quarter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="page2.html">Second Quarter</a>
+            </li>
+        </ul>
+
+        <!-- Search box and search button -->
+            <form style="display: flex;" class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-10" type="search" name="search" placeholder="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+            </form>
+    </nav>
+</header>
+
+<h1 style="color: yellow; text-align:center; margin-top: 50px;">First Quarter Files</h1>
+<div style="display: flex; justify-content: center;">
+    <button id="view-details" style="margin-top: 30px;">View Details</button>
+</div>
+
+
+<div id="file-links" style="display: none; margin-top: 20px;">
+    <!-- Links to First Quarter files will be displayed here -->
+    <ul style="text-align: center; font-size: 20px; list-style: none;">
+        <li><a style="text-decoration: none; color:white" href="https://drive.google.com/drive/folders/1YZLlAhRbH9SZytKjf3gNTwUGOGBZOnyS?usp=sharing">1st Quarter Project</a></li>
+        <li><a style="text-decoration: none; color:white" href="https://drive.google.com/drive/folders/19MKOLm4Q0rt1q4611m2M0yhj0WPzNxLe?usp=sharing">Activities, Exercises, Practices, and Atth</a></li>
+        <li><a style="text-decoration: none; color:white" href="https://drive.google.com/drive/folders/1F-oxbcGg5R-VdRsHNPS6-MoxXDi92xdE?usp=sharing">Homeworks</a></li>
+        <li><a style="text-decoration: none; color:white" href="https://drive.google.com/drive/folders/1sn11VJehRBbav0eqqlWBd7X6WIGaYxhh?usp=sharing">Seatworks</a></li>
+    </ul>
+</div>
+
+<script>
+    // JavaScript statement that will show/hide file links when the "View Details" button is clicked
+    document.getElementById('view-details').addEventListener('click', function() {
+        toggleFileLinks();
+    });
+
+    function toggleFileLinks() {
+        var fileLinksDiv = document.getElementById('file-links');
+        if (fileLinksDiv.style.display === 'none') {
+            fileLinksDiv.style.display = 'block';
+        } else {
+            fileLinksDiv.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
